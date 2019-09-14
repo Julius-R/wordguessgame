@@ -5,28 +5,11 @@ const choiceTwo = document.getElementById("option2");
 const buttons = document.querySelectorAll("#options button");
 const resetButton = document.getElementById("reset");
 const result = document.getElementById("result");
-
 const game = {
 	turn: 1,
 	words: [
-		"chimney",
-		"hen",
-		"story",
-		"steak",
-		"pick",
-		"ton",
-		"clerk",
-		"old age",
-		"slow",
-		"traffic",
-		"lion",
-		"grant",
-		"source",
-		"bullet",
-		"lip",
-		"revise",
-		"master",
-		"retired"
+		"chimney", "hen", "story", "steak", "pick", "ton", "clerk", "old age", "slow",
+		"traffic", "lion", "grant", "source", "bullet", "lip", "revise", "master", "retired"
 	],
 	numRight: 0,
 	numWrong: 0,
@@ -96,5 +79,4 @@ const newGame = () => {
 };
 
 resetButton.addEventListener("click", newGame);
-
 newGame();
