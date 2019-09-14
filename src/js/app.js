@@ -14,13 +14,9 @@ const game = {
 	numRight: 0,
 	numWrong: 0,
 	resetScore: function() {
-		(this.numRight = 0),
-			(this.numWrong = 0),
-			console.log(
-				`The num wrong is: ${game.numWrong}, and the num right is: ${
-					game.numRight
-				}`
-			);
+			this.numRight = 0,
+			this.numWrong = 0,
+			console.log(`The num wrong is: ${game.numWrong}, and the num right is: ${game.numRight}`);
 	}
 };
 
